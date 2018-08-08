@@ -1,0 +1,511 @@
+@import url(base.css);
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+header{
+    width:100%;
+    height: 40px;
+    background: #444444;
+}
+.main{
+    /*width:976px;*/
+    height: 100%;
+    margin:0 auto;
+    font-size:10px;
+    color:#A8A8AA;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+}
+nav{
+    width:100%;
+    height: 44px;
+    background: #333;
+}
+nav ul{
+    /*width:976px;*/
+    height: 100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+nav ul a{
+    font-size:12px;
+    font-weight:200;
+    color:#fff;
+}
+nav ul a:hover{
+    opacity: 0.65;
+}
+.list,.list ul{
+    width:100%;
+    background: pink;
+}
+.list ul .iPhoneX{
+    width: 100%;
+    background: #fafafa;
+    border-bottom: 12px solid #fff;
+}
+/*iPhoneX*/
+.list ul .iPhoneX a{
+    position: relative;
+    display: block;
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+}
+.list ul .iPhoneX a h2{
+    font-weight:600;
+    color:#111;
+    text-align: center;
+}
+.list ul .iPhoneX a h4{
+    font-weight:400;
+    color:#111;
+    text-align: center;
+}
+.list ul .iPhoneX .text{
+    width:100%;
+    color:#539ED9;
+    text-align: center;
+}
+.list ul .iPhoneX .picture{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+/*iPad*/
+.list ul .iPad{
+    width: 100%;
+    background: #F5F5F5;
+    border-bottom: 12px solid #fff;
+}
+.list ul .iPad a{
+    position: relative;
+    display: block;
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+}
+.list ul .iPad a h2{
+    font-weight:600;
+    color:#111;
+    text-align: center;
+}
+.list ul .iPad a h4{
+    font-weight:400;
+    color:#111;
+    text-align: center;
+}
+.list ul .iPad .text{
+    width:100%;
+    color:#539ED9;
+    text-align: center;
+}
+.list ul .iPad .picture{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+/*MacBook_Pro*/
+.list ul .MacBook_Pro{
+    width: 100%;
+    background: #131218;
+    border-bottom: 12px solid #fff;
+}
+.list ul .MacBook_Pro a{
+    position: relative;
+    display: block;
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+}
+.list ul .MacBook_Pro a h2{
+    font-weight:600;
+    color:#fff;
+    text-align: center;
+}
+.list ul .MacBook_Pro a h4{
+    font-weight:400;
+    color:#fff;
+    text-align: center;
+}
+.list ul .MacBook_Pro .text{
+    width:100%;
+    color:#fff;
+    text-align: center;
+}
+.list ul .MacBook_Pro .picture{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+/*六宫格开始*/
+.six,.six ul{
+    width:100%;
+}
+.six ul li{
+    border-bottom:12px solid #fff;
+    box-sizing:border-box;
+}
+.six ul li a{
+    position: relative;
+    display: block;
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    background:url(../img/shop_for_college_large.jpg) no-repeat center;
+}
+.six ul li a h4{
+    color:#111111;
+    text-align:center;
+    font-weight:600;
+}
+.six ul li a h5{
+    font-weight:400;
+    color:#111111;
+    text-align:center;
+}
+/*大于1024*/
+@media screen and (min-width:1024px){
+    .main{
+        width:976px;
+    }
+   .max{
+        display: block;
+    }
+    .min{
+        display: none;
+    }
+    nav ul{
+        width:976px;
+        margin:0 auto;
+    }
+    .list ul .iPhoneX{
+        height: 580px;
+    }
+    .list ul .iPhoneX a h2{
+        font-size:56px;
+        line-height: 60px;
+        margin-top:80px;
+    }
+    .list ul .iPhoneX a h4{
+        font-size:21px;
+        line-height: 44px;
+    }
+    .list ul .iPhoneX .text{
+        font-size:20px;
+        line-height:30px;
+    }
+    .list ul .iPhoneX .picture{
+        width:1068px;
+        height: 337px;
+        background:url(../img/iphone_x_large.jpg) no-repeat center;
+    }
+    .list ul .iPad{
+        height: 580px;
+    }
+    .list ul .iPad a h2{
+        font-size:56px;
+        line-height: 60px;
+        margin-top:60px;
+    }
+    .list ul .iPad a h4{
+        font-size:21px;
+        line-height: 44px;
+    }
+    .list ul .iPad .text{
+        font-size:20px;
+        line-height:30px;
+    }
+    .list ul .iPad .picture{
+        width:930px;
+        height: 355px;
+        background:url(../img/ipad_large.jpg) no-repeat center;
+    }
+    .list ul .MacBook_Pro{
+        height: 580px;
+    }
+    .list ul .MacBook_Pro a h2{
+        font-size:56px;
+        line-height: 60px;
+        margin-top:80px;
+    }
+    .list ul .MacBook_Pro a h4{
+        font-size:21px;
+        line-height: 44px;
+    }
+    .list ul .MacBook_Pro .text{
+        font-size:20px;
+        line-height:30px;
+    }
+    .list ul .MacBook_Pro .picture{
+        width:1068px;
+        height: 337px;
+        background:url(../img/macbook_pro_performance_large.jpg) no-repeat center;
+    }
+    /*6*/
+    .six ul li{
+        width:50%;
+        height:592px;
+        border-bottom:12px solid #fff;
+        border-left:12px solid #fff;
+        border-right:6px solid #fff;
+        float: left;
+        box-sizing:border-box;
+    }
+    .six ul li:nth-child(2n){
+        border-left:6px solid #fff;
+        border-right:12px solid #fff;
+    }
+    .six ul li a{
+        position: relative;
+        display: block;
+        width:100%;
+        height: 100%;
+        overflow: hidden;
+        background:url(../img/shop_for_college_large.jpg) no-repeat center;
+    }
+    .six ul li a h4{
+        font-size:40px;
+        text-align:center;
+        line-height:56px;
+        margin-top:55px;
+    }
+    .six ul li a h5{
+        font-size:18px;
+        line-height:28px;
+    }
+}
+/*小于1024*/
+@media screen and (max-width:1024px){
+    .main{
+        padding-right:22px;
+    }
+    .max{
+        display: block;
+    }
+    .min{
+        display: none;
+    }
+    nav ul{
+        padding:0 22px;
+    }
+    .list ul .iPhoneX{
+        height:569px;
+    }
+    .list ul .iPhoneX a h2{
+        font-size:33px;
+        line-height: 53px;
+        margin-top:90px;
+    }
+    .list ul .iPhoneX a h4{
+        font-size:21px;
+        line-height: 41px;
+    }
+    .list ul .iPhoneX .text{
+        font-size:19px;
+        line-height: 30px;
+    }
+    .list ul .iPhoneX .picture{
+        width:736px;
+        height: 336px;
+        background:url(../img/iphone_x_medium.jpg) no-repeat center;
+    }
+    .list ul .iPad{
+        height:569px;
+    }
+    .list ul .iPad a h2{
+        font-size:33px;
+        line-height: 53px;
+        margin-top:85px;
+    }
+    .list ul .iPad a h4{
+        font-size:21px;
+        line-height: 41px;
+    }
+    .list ul .iPad .text{
+        font-size:19px;
+        line-height: 30px;
+    }
+    .list ul .iPad .picture{
+        width:650px;
+        height: 325px;
+        background:url(../img/ipad_medium.jpg) no-repeat center;
+    }
+    .list ul .MacBook_Pro{
+        height:569px;
+    }
+    .list ul .MacBook_Pro a h2{
+        font-size:33px;
+        line-height: 53px;
+        margin-top:90px;
+    }
+    .list ul .MacBook_Pro a h4{
+        font-size:21px;
+        line-height: 41px;
+    }
+    .list ul .MacBook_Pro .text{
+        font-size:19px;
+        line-height: 30px;
+    }
+    .list ul .MacBook_Pro .picture{
+        width:736px;
+        height: 336px;
+        background:url(../img/macbook_pro_performance_medium.jpg) no-repeat center;
+    }
+    /*6*/
+    .six ul li{
+        width:50%;
+        height:502px;
+        border-bottom:12px solid #fff;
+        border-left:12px solid #fff;
+        border-right:6px solid #fff;
+        float: left;
+        box-sizing:border-box;
+    }
+    .six ul li:nth-child(2n){
+        border-left:6px solid #fff;
+        border-right:12px solid #fff;
+    }
+    .six ul li a{
+        position: relative;
+        display: block;
+        width:100%;
+        height: 100%;
+        overflow: hidden;
+        background:url(../img/shop_for_college_medium.jpg) no-repeat center;
+    }
+    .six ul li a h4{
+        font-size:32px;
+        line-height:44px;
+        margin-top:50px;
+    }
+    .six ul li a h5{
+        font-size:19px;
+        line-height:30px;
+    }
+}
+/*小于768*/
+@media screen and (max-width:768px){
+    .max{
+        display: none;
+    }
+    .min{
+        display: block;
+    }
+    .list ul .iPhoneX{
+        height:500px;
+    }
+    .list ul .iPhoneX a h2{
+        font-size:24px;
+        line-height: 40px;
+        margin-top:40px;
+    }
+    .list ul .iPhoneX a h4{
+        font-size:16px;
+        line-height: 32px;
+    }
+    .list ul .iPhoneX .text{
+        font-size:16px;
+        line-height: 32px;
+    }
+    .list ul .iPhoneX .picture{
+        width:320px;
+        height: 353px;
+        background:url(../img/iphone_x_small.jpg) no-repeat center;
+    }
+    .list ul .iPad{
+        height:500px;
+    }
+    .list ul .iPad a h2{
+        font-size:24px;
+        line-height: 40px;
+        margin-top:27px;
+    }
+    .list ul .iPad a h4{
+        font-size:16px;
+        line-height: 32px;
+    }
+    .list ul .iPad .text{
+        font-size:16px;
+        line-height: 32px;
+    }
+    .list ul .iPad .picture{
+        width:228px;
+        height: 340px;
+        background:url(../img/ipad_small.jpg) no-repeat center;
+    }
+    .list ul .MacBook_Pro{
+        height:500px;
+    }
+    .list ul .MacBook_Pro a h2{
+        font-size:24px;
+        line-height: 40px;
+        margin-top:40px;
+    }
+    .list ul .MacBook_Pro a h4{
+        font-size:16px;
+        line-height: 32px;
+    }
+    .list ul .MacBook_Pro .text{
+        font-size:16px;
+        line-height: 32px;
+    }
+    .list ul .MacBook_Pro .picture{
+        width:320px;
+        height: 353px;
+        background:url(../img/macbook_pro_performance_small.jpg) no-repeat center;
+    }
+    /*6*/
+    .six ul li{
+        width:100%;
+        height:512px;
+        background: #ff6700;
+        border-bottom:12px solid #fff;
+        box-sizing:border-box;
+    }
+    .six ul li a{
+        position: relative;
+        display: block;
+        width:100%;
+        height: 100%;
+        overflow: hidden;
+        background:url(../img/shop_for_college_small.jpg) no-repeat center;
+    }
+    .six ul li a h4{
+        font-size:32px;
+        line-height:44px;
+        margin-top:40px;
+    }
+    .six ul li a h5{
+        font-size:19px;
+        line-height:24px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
