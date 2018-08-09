@@ -158,6 +158,7 @@ nav ul a:hover{
 /*六宫格开始*/
 .six,.six ul{
     width:100%;
+    overflow: hidden;
 }
 .six ul li{
     border-bottom:12px solid #fff;
@@ -169,7 +170,6 @@ nav ul a:hover{
     width:100%;
     height: 100%;
     overflow: hidden;
-    background:url(../img/shop_for_college_large.jpg) no-repeat center;
 }
 .six ul li a h4{
     color:#111111;
@@ -181,6 +181,132 @@ nav ul a:hover{
     color:#111111;
     text-align:center;
 }
+
+/*底部开始*/
+.all_foot{
+    width:100%;
+    background: #f2f2f2;
+    overflow: hidden;
+}
+.all_foot .all_foot_box{
+    margin: 0 auto;
+    padding: 0 22px;
+}
+.all_foot .foot_top{
+    width:100%;
+    overflow: hidden;
+}
+.all_foot .foot_top .foot_top_each{
+    width:20%;
+    float: left;
+}
+.all_foot .foot_top .foot_top_each .title{
+    width:100%;
+    margin-bottom:0.8em;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+}
+.all_foot .foot_top .foot_top_each .text_all{
+    width:100%;
+}
+.all_foot .foot_top .foot_top_each .text_all li{
+    width:100%;
+    margin-bottom:0.8em;
+}
+.all_foot .foot_top .foot_top_each .text_all li a{
+    width:100%;
+    font-size: 12px;
+    font-weight: 400;
+    color:#333;
+    line-height: 12px;
+}
+.all_foot .foot_top .foot_top_each .text_all li a:hover{
+    border-bottom:1px solid #333;
+}
+
+.all_foot .all_foot_box .min_foot_box{
+    max-width: 980px;
+}
+.all_foot .all_foot_box .min_foot_box li{
+    width:100%;
+    height: 40px;
+    border-bottom:1px solid #d6d6d6;
+    line-height: 40px;
+}
+.all_foot .all_foot_box .min_foot_box li a{
+    font-size:12px;
+    font-weight:400;
+    color:#333;
+    display: flex;
+    justify-content: space-between;
+}
+/*最下边的文字*/
+.all_foot .all_foot_box .foot_bottom{
+    width:100%;
+}
+.all_foot .all_foot_box .foot_bottom .text1{
+    line-height: 40px;
+    border-bottom:1px solid #d6d6d6;
+    font-size:12px;
+    color:#888888;
+}
+.all_foot .all_foot_box .foot_bottom .text1 a{
+    color:#0070c9;
+}
+.all_foot .all_foot_box .foot_bottom .text1 a:hover{
+    border-bottom:1px solid #0070c9;
+}
+.all_foot .all_foot_box .foot_bottom .text2{
+    width:100%;
+    line-height: 28px;
+    font-size:12px;
+    color:#888888;
+    overflow: hidden;
+}
+.all_foot .all_foot_box .foot_bottom .text2 .text2_left{
+    float: left;
+    margin-right:35px;
+}
+.all_foot .all_foot_box .foot_bottom .text2 .text2_center{
+    line-height: 28px;
+    font-size:12px;
+    float: left;
+}
+.all_foot .all_foot_box .foot_bottom .text2 .text2_center a{
+    font-size:12px;
+    padding:0 5px;
+    color:#555;
+}
+.all_foot .all_foot_box .foot_bottom .text2 .text2_center span{
+    color:#d6d6d6;
+}
+.all_foot .all_foot_box .foot_bottom .text2 .text2_right{
+    display: block;
+    float: right;
+    color:red;
+}
+.all_foot .all_foot_box .foot_bottom .text2 .text2_right span{
+    color:#555;
+}
+.all_foot .all_foot_box .foot_bottom .text2 .text2_right span:hover{
+    border-bottom:1px solid #555;
+}
+.all_foot .all_foot_box .foot_bottom .text3{
+    width:100%;
+    line-height: 28px;
+    font-size:12px;
+    color:#888888;
+}
+.all_foot .all_foot_box .foot_bottom .text3 a{
+    color:#888;
+}
+.all_foot .all_foot_box .foot_bottom .text3 a:hover{
+    border-bottom:1px solid #555;
+}
+
+
+
 /*大于1024*/
 @media screen and (min-width:1024px){
     .main{
@@ -274,11 +400,6 @@ nav ul a:hover{
         border-right:12px solid #fff;
     }
     .six ul li a{
-        position: relative;
-        display: block;
-        width:100%;
-        height: 100%;
-        overflow: hidden;
         background:url(../img/shop_for_college_large.jpg) no-repeat center;
     }
     .six ul li a h4{
@@ -290,6 +411,23 @@ nav ul a:hover{
     .six ul li a h5{
         font-size:18px;
         line-height:28px;
+    }
+    /*底部开始*/
+    .all_foot .all_foot_box{
+        width: 980px;
+    }
+    .all_foot .foot_top{
+        padding-top:45px;
+    }
+    .all_foot .foot_top{
+        display: block;
+    }
+    .all_foot .min_foot_box{
+        display: none;
+    }
+    /*最下边的文字*/
+    .all_foot .all_foot_box .foot_bottom{
+        padding:22px 0;
     }
 }
 /*小于1024*/
@@ -384,11 +522,6 @@ nav ul a:hover{
         border-right:12px solid #fff;
     }
     .six ul li a{
-        position: relative;
-        display: block;
-        width:100%;
-        height: 100%;
-        overflow: hidden;
         background:url(../img/shop_for_college_medium.jpg) no-repeat center;
     }
     .six ul li a h4{
@@ -399,6 +532,20 @@ nav ul a:hover{
     .six ul li a h5{
         font-size:19px;
         line-height:30px;
+    }
+    /*底部开始*/
+    .all_foot .foot_top{
+        padding-top:25px;
+    }
+    .all_foot .foot_top{
+        display: block;
+    }
+    .all_foot .min_foot_box{
+        display: none;
+    }
+    /*最下边的文字*/
+    .all_foot .all_foot_box .foot_bottom{
+        padding:22px 0 0;
     }
 }
 /*小于768*/
@@ -476,16 +623,14 @@ nav ul a:hover{
     .six ul li{
         width:100%;
         height:512px;
-        background: #ff6700;
         border-bottom:12px solid #fff;
         box-sizing:border-box;
     }
+    .six ul li:nth-child(2n){
+        border-left:0;
+        border-right:0;
+    }
     .six ul li a{
-        position: relative;
-        display: block;
-        width:100%;
-        height: 100%;
-        overflow: hidden;
         background:url(../img/shop_for_college_small.jpg) no-repeat center;
     }
     .six ul li a h4{
@@ -496,6 +641,13 @@ nav ul a:hover{
     .six ul li a h5{
         font-size:19px;
         line-height:24px;
+    }
+    /*底部开始*/
+    .all_foot .foot_top{
+        display: none;
+    }
+    .all_foot .min_foot_box{
+        display: block;
     }
 }
 
