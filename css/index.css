@@ -304,7 +304,57 @@ nav ul a:hover{
 .all_foot .all_foot_box .foot_bottom .text3 a:hover{
     border-bottom:1px solid #555;
 }
-
+/*最下边最小屏*/
+.all_foot .all_foot_box .small_bottom{
+    width:100%;
+    padding:17px 0 19px;
+}
+.all_foot .all_foot_box .small_bottom .small_text1{
+    font-size:12px;
+    color:#A38888;
+    line-height: 12px;
+    padding-bottom:8px;
+    margin-bottom:7px;
+}
+.all_foot .all_foot_box .small_bottom .small_text1 a{
+    color:#0070c9;
+}
+.all_foot .all_foot_box .small_bottom .small_text1 a:hover{
+    border-bottom:1px solid #0070c9;
+}
+.all_foot .all_foot_box .small_bottom .small_text2{
+    display: block;
+    font-size:12px;
+    line-height: 12px;
+}
+.all_foot .all_foot_box .small_bottom .small_text2 i{
+    color:red;
+}
+.all_foot .all_foot_box .small_bottom .small_text2 span{
+    color:#555;
+}
+.all_foot .all_foot_box .small_bottom .small_text3{
+    padding-top:6px;
+    font-size:12px;
+    color:#A38888;
+    line-height: 24px;
+}
+.all_foot .all_foot_box .small_bottom .small_text3 .s_t_text4 a{
+    color:#555;
+    padding:0 5px;
+}
+.all_foot .all_foot_box .small_bottom .small_text3 .s_t_text4 a:first-child{
+    padding-left:0;
+}
+.all_foot .all_foot_box .small_bottom .small_text3 .s_t_text4 span{
+    color:#d6d6d6;
+}
+.all_foot .all_foot_box .small_bottom .small_text3 .s_t_text5 a{
+    color:#B09999;
+}
+.all_foot .all_foot_box .small_bottom .small_text3 .s_t_text5 a:hover{
+    border-bottom:1px solid #B09999;
+}
 
 
 /*大于1024*/
@@ -428,6 +478,10 @@ nav ul a:hover{
     /*最下边的文字*/
     .all_foot .all_foot_box .foot_bottom{
         padding:22px 0;
+        display:block;
+    }
+    .all_foot .all_foot_box .small_bottom{
+        display: none;
     }
 }
 /*小于1024*/
@@ -545,7 +599,11 @@ nav ul a:hover{
     }
     /*最下边的文字*/
     .all_foot .all_foot_box .foot_bottom{
-        padding:22px 0 0;
+        padding:22px 0;
+        display:block;
+    }
+    .all_foot .all_foot_box .small_bottom{
+        display: none;
     }
 }
 /*小于768*/
@@ -647,6 +705,13 @@ nav ul a:hover{
         display: none;
     }
     .all_foot .min_foot_box{
+        display: block;
+    }
+    /*最下边小文字*/
+    .all_foot .all_foot_box .foot_bottom{
+        display:none;
+    }
+    .all_foot .all_foot_box .small_bottom{
         display: block;
     }
 }
