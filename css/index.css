@@ -682,6 +682,8 @@ nav ul a:hover{
         width:100%;
         height:512px;
         border-bottom:12px solid #fff;
+        border-left:0;
+        border-right:0;
         box-sizing:border-box;
     }
     .six ul li:nth-child(2n){
